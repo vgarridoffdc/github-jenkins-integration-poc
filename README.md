@@ -1,6 +1,7 @@
 # GITHUB - JEKINS - INTEGRATION
 
 ## Steps to connect Github with local Jenkin
+
 - Check access to repo `https://github.com/vgarridoffdc/github-jenkins-integration-poc`
 - Pull jenkins image https://hub.docker.com/r/jenkins/jenkins -> `docker pull jenkins/jenkins:lts-jdk11`
 - Run Jenkins running locally `docker run -p 8080:8080 --name=jenkins-master -d jenkins/jenkins:lts-jdk11`
@@ -31,6 +32,7 @@
   - You should see a confirmation message, this means that you can your local Jenkins can connect with Github
 
 ## Setting up a Jenkins Job
+
 - Create a piipeline in your local jenkins:
   - Name: github-integration-pipeline
   - Type: Pipeline
@@ -40,5 +42,7 @@
   - Repository URL: `https://github.com/vgarridoffdc/github-jenkins-integration-poc`
   - Branch specifier (default value): `*/master`
   - Click on Save
+
 ## Some docs
-  - How to run and setup Jenkins locally -> https://technology.riotgames.com/news/putting-jenkins-docker-container
+
+- How to run and setup Jenkins locally -> https://technology.riotgames.com/news/putting-jenkins-docker-container
