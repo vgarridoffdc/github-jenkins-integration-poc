@@ -15,6 +15,7 @@
   - Full Name: Super Local Admin
   - E-mail: your email
 - Set Jenkins URL to `http://localhost:8080/` (default value)
+- Enable `Enable proxy compatibility` inside `Configure Global Security`
 - In
 - Create a ngrok account (I have linked to my google account)
 - Install and setup ngrok `https://dashboard.ngrok.com/get-started/setup` (I will commit the ngrok zip)
@@ -27,13 +28,14 @@
   - Active checked
   - Click on create/update webhook
 - In the ngrok console you will see a POST request made to /github-webhook/ 
-- Generate a deploy ssh key. To do this follow these steps:
+- Generate a deploy ssh key. To do this follow these steps: (needs to be reviewed)
   - Open a terminal session inside the jenkins container with `docker exec -it <container-id> bash `
   - Then run `ssh-keygen` and click enter to each question, this should create the ssh key inside `/var/lib/jenkins/.ssh/id_rsa.pub` 
   - Run `cat /var/jenkins_home/.ssh/id_rsa.pub` to access the ssh key, copy it somewhere
   - Then navigate to your Github repository Settings > Deploy Keys and Add deploy key. Give it a name and paste in the copied key. Enable write access
   - Inside the jenkins terminal run `ssh git@github.com` and accept the connection
   - You should see a confirmation message, this means that you can your local Jenkins can connect with Github
+- Create a github personal token https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token, watch out for the oauth scopes.
 
 ## Setting up a Jenkins Job
 
