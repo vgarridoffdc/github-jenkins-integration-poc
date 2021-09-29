@@ -15,6 +15,7 @@
   - Full Name: Super Local Admin
   - E-mail: your email
 - Set Jenkins URL to `http://localhost:8080/` (default value)
+- Install the `Job and Stage monitoring` and `GitHub Branch Source` plugins
 - Create a ngrok account (I have linked to my google account)
 - Install and setup ngrok `https://dashboard.ngrok.com/get-started/setup` (I will commit the ngrok zip)
 - Run ngrok locally aiming to the Jenkins port with `./ngrok http 8080`
