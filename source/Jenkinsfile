@@ -6,11 +6,6 @@ pipeline {
     }
     
     stages {
-        stage('Cloning Git') {
-            steps {
-                git 'https://github.com/DeveloperWakeling/mocha_testing'
-            }
-        }
         stage('Install Dependencies'){
             steps {
                 sh 'cd source && npm install'
