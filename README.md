@@ -20,3 +20,6 @@
 - Run ngrok locally aiming to the Jenkins port with `./ngrok http 8080`
 - Follow steps defined in: https://www.linkedin.com/pulse/integrating-github-webhooks-jenkins-automate-unit-becerril-dom%C3%ADnguez/
 
+## Notes
+
+- The github webhook content type format should be **application/json**
