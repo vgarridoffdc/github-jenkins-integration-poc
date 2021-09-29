@@ -36,6 +36,7 @@
   - Inside the jenkins terminal run `ssh git@github.com` and accept the connection
   - You should see a confirmation message, this means that you can your local Jenkins can connect with Github
 - Create a github personal token https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token, watch out for the oauth scopes.
+- 
 
 ## Setting up a Jenkins Job
 
