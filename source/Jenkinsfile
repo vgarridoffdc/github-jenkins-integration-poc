@@ -13,12 +13,12 @@ pipeline {
         }
         stage('Install Dependencies'){
             steps {
-                sh 'npm install'
+                sh 'cd source && npm install'
             }
         }
         stage ('Test') {
             steps {
-                sh 'npm test'
+                sh 'cd source && npm test'
             }
         }
     }
