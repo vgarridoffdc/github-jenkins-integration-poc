@@ -15,11 +15,13 @@
   - Full Name: Super Local Admin
   - E-mail: your email
 - Set Jenkins URL to `http://localhost:8080/` (default value)
+- Install the `Job and Stage monitoring` and `GitHub Branch Source` plugins
 - Create a ngrok account (I have linked to my google account)
 - Install and setup ngrok `https://dashboard.ngrok.com/get-started/setup` (I will commit the ngrok zip)
 - Run ngrok locally aiming to the Jenkins port with `./ngrok http 8080`
 - Follow steps defined in: https://www.linkedin.com/pulse/integrating-github-webhooks-jenkins-automate-unit-becerril-dom%C3%ADnguez/
-
+	- You willl need to create a multi pipeline jenkins jobs with the same credentials used in the previous link
+	- Remember that the github username doesn't include your email domain (@financialforce.com)
 ## Notes
 
 - The github webhook content type format should be **application/json**
