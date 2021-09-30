@@ -20,7 +20,7 @@
 - Install and setup ngrok `https://dashboard.ngrok.com/get-started/setup` (I will commit the ngrok zip)
 - Run ngrok locally aiming to the Jenkins port with `./ngrok http 8080`
 - Follow steps defined in: https://www.linkedin.com/pulse/integrating-github-webhooks-jenkins-automate-unit-becerril-dom%C3%ADnguez/
-	- You willl need to create a multi pipeline jenkins jobs with the same credentials used in the previous link
+	- **IMPORTANT**  You will need to create a multi pipeline jenkins jobs with the same credentials used in the previous link, the normal pipeline or freestyle jobs seem to not work
 	- Remember that the github username doesn't include your email domain (@financialforce.com)
 ## Notes
 
